@@ -1,0 +1,253 @@
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\csc.exe
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\Interface.dll.config
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\Interface.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\Interface.pdb
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\csc.exe.config
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\csc.rsp
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\csi.exe
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\csi.exe.config
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\csi.rsp
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.AppContext.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.Console.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.IO.Compression.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Claims.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.ValueTuple.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\vbc.exe
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\vbc.exe.config
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\vbc.rsp
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\VBCSCompiler.exe
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\DataModel.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\EntityFramework.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\DataModel.pdb
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\DataModel.dll.config
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\bin\EntityFramework.xml
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\obj\Debug\Interface.csprojAssemblyReference.cache
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\obj\Debug\Interface.csproj.CoreCompileInputs.cache
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\obj\Debug\Interface.csproj.CopyComplete
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\obj\Debug\Interface.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\Interface\obj\Debug\Interface.pdb
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\Interface.dll.config
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\Interface.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\Interface.pdb
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\csc.exe
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\csc.exe.config
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\csc.rsp
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\csi.exe
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\csi.exe.config
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\csi.rsp
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.AppContext.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.Console.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.IO.Compression.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.Security.Claims.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.ValueTuple.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\vbc.exe
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\vbc.exe.config
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\vbc.rsp
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\VBCSCompiler.exe
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\DataModel.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\EntityFramework.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\DataModel.pdb
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\DataModel.dll.config
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\bin\EntityFramework.xml
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\obj\Debug\Interface.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\obj\Debug\Interface.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\obj\Debug\Interface.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\Interface\obj\Debug\Interface.pdb
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\Interface.dll.config
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\Interface.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\Interface.pdb
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\csc.exe
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\csc.exe.config
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\csc.rsp
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\csi.exe
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\csi.exe.config
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\csi.rsp
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.AppContext.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.Console.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.IO.Compression.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.IO.Pipes.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Claims.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.ValueTuple.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.Xml.XPath.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\vbc.exe
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\vbc.exe.config
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\vbc.rsp
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\VBCSCompiler.exe
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\DataModel.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\EntityFramework.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\DataModel.pdb
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\DataModel.dll.config
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\EntityFramework.xml
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\obj\Debug\Interface.csprojAssemblyReference.cache
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\obj\Debug\Interface.csproj.CopyComplete
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\obj\Debug\Interface.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\obj\Debug\Interface.pdb
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\obj\Debug\RdlCompile.cache
+C:\Users\1234\Desktop\SMARTZONE\Solution\Interface\obj\Debug\RdlCompile.compiled
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\Interface.dll.config
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\Interface.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\Interface.pdb
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\csc.exe
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\csc.exe.config
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\csc.rsp
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\csi.exe
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\csi.exe.config
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\csi.rsp
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.AppContext.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.Console.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.IO.Compression.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.IO.Pipes.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Claims.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.ValueTuple.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.Xml.XPath.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\vbc.exe
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\vbc.exe.config
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\vbc.rsp
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\VBCSCompiler.exe
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\DataModel.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\EntityFramework.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\DataModel.pdb
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\DataModel.dll.config
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\bin\EntityFramework.xml
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\obj\Debug\Interface.csprojAssemblyReference.cache
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\obj\Debug\RdlCompile.cache
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\obj\Debug\RdlCompile.compiled
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\obj\Debug\Interface.csproj.CopyComplete
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\obj\Debug\Interface.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\Interface\obj\Debug\Interface.pdb

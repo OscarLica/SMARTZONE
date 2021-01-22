@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="Interface.Principal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<%--    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />--%>
+    <title>SMARTZONE</title><%--no se usa--%>
+    <script type="text/javascript" src="<%= Page.ResolveUrl("~/Script/MyScript.js") %>"></script>
+    <link href="./Style/AppStyle.css" rel="stylesheet" />
+    <link href="./Style/Menu.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+<%--    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no" />--%>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <label id="titulo" class="titulo">SMARTZONE</label>
+            </header>
+            <section class="MainSection">
+                <div class="NavPrin">
+                    <aside class="first-menu " style="top: -15px; height: 135%">
+                        <div class="list-group-item py-2">
+                            <a href="#">
+                                <img src="img/user.jpg" /><span><asp:Label runat="server" ID="User"></asp:Label></span>
+                            </a>
+                        </div>
+                        <div class="list-group-item py-2">
+                            <a href="Catalogos.aspx">
+                                <img src="img/CatalogosX.png" /><span>Catalogos</span>
+                            </a>
+                        </div>
+                        <div class="list-group-item py-2">
+                            <a href="MainFacturacion.aspx">
+                                <img src="img/FacturacionX.png" /><span>Facturacion</span>
+                            </a>
+                        </div>
+                        <div class="list-group-item py-2">
+                            <a href="MainProductos.aspx">
+                                <img src="img/ProductosBodegaX.png" /><span>Productos Bodega</span>
+                            </a>
+                        </div>
+                         <div class="list-group-item py-2">
+                            <a href="ArticulosTaller.aspx">
+                                <img src="img/icon.png" style="width:64px;height:64px;background-color:white" /><span>Productos Taller</span>
+                            </a>
+                        </div>
+                        <div class="list-group-item py-2">
+                            <a href="default.aspx">
+                                <img src="img/ConfiguracionX.png" /><span>Seguridad</span>
+                            </a>
+                        </div>
+                        <div class="list-group-item py-2">
+                            <a href="Reportes.aspx">
+                                <img src="img/ReporteX.png" /><span>Reportes</span>
+                            </a>
+                        </div>
+                        <div class="list-group-item py-2">
+                            <a href="Salir.aspx">
+                                <img src="img/logout.jpg" width="64" height="64" style="color:white"/><span>Salir</span>
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+                <main class="Contenido">
+                    <asp:ContentPlaceHolder ID="main" runat="server">
+                    </asp:ContentPlaceHolder>
+                </main>
+            </section>
+        </div>
+    </form>
+</body>
+</html>

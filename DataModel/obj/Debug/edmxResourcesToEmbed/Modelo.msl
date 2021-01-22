@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BDSMARTZONEModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="TblAlmacen">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblAlmacen">
+        <MappingFragment StoreEntitySet="TblAlmacen">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="CodBodega" ColumnName="CodBodega" />
+          <ScalarProperty Name="Capacidad" ColumnName="Capacidad" />
+          <ScalarProperty Name="Disponible" ColumnName="Disponible" />
+          <ScalarProperty Name="IdUsuarioCrea" ColumnName="IdUsuarioCrea" />
+          <ScalarProperty Name="IdUsuarioModifica" ColumnName="IdUsuarioModifica" />
+          <ScalarProperty Name="FechaCrea" ColumnName="FechaCrea" />
+          <ScalarProperty Name="FechaModifica" ColumnName="FechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblProductosAlmacen">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblProductosAlmacen">
+        <MappingFragment StoreEntitySet="TblProductosAlmacen">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdProveedor" ColumnName="IdProveedor" />
+          <ScalarProperty Name="NumRecibo" ColumnName="NumRecibo" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="Iva" ColumnName="Iva" />
+          <ScalarProperty Name="ExcentoIva" ColumnName="ExcentoIva" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="IdUsuarioCrea" ColumnName="IdUsuarioCrea" />
+          <ScalarProperty Name="IdUsuarioModifica" ColumnName="IdUsuarioModifica" />
+          <ScalarProperty Name="FechaCrea" ColumnName="FechaCrea" />
+          <ScalarProperty Name="FechaModifica" ColumnName="FechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblProductosAlmacenDet">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblProductosAlmacenDet">
+        <MappingFragment StoreEntitySet="TblProductosAlmacenDet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdProductosAlmacen" ColumnName="IdProductosAlmacen" />
+          <ScalarProperty Name="IdModelo" ColumnName="IdModelo" />
+          <ScalarProperty Name="CodProducto" ColumnName="CodProducto" />
+          <ScalarProperty Name="Serie" ColumnName="Serie" />
+          <ScalarProperty Name="IMEI" ColumnName="IMEI" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="PrecioC" ColumnName="PrecioC" />
+          <ScalarProperty Name="PrecioV" ColumnName="PrecioV" />
+          <ScalarProperty Name="CodFactura" ColumnName="CodFactura" />
+          <ScalarProperty Name="FechaBaja" ColumnName="FechaBaja" />
+          <ScalarProperty Name="MotivoBaja" ColumnName="MotivoBaja" />
+          <ScalarProperty Name="IdUsuarioCrea" ColumnName="IdUsuarioCrea" />
+          <ScalarProperty Name="IdUsuarioModifica" ColumnName="IdUsuarioModifica" />
+          <ScalarProperty Name="FechaCrea" ColumnName="FechaCrea" />
+          <ScalarProperty Name="FechaModifica" ColumnName="FechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblCategorias">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblCategorias">
+        <MappingFragment StoreEntitySet="TblCategorias">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="IdUsuarioCrea" ColumnName="IdUsuarioCrea" />
+          <ScalarProperty Name="IdUsuarioModifica" ColumnName="IdUsuarioModifica" />
+          <ScalarProperty Name="FechaCrea" ColumnName="FechaCrea" />
+          <ScalarProperty Name="FechaModifica" ColumnName="FechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblGama">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblGama">
+        <MappingFragment StoreEntitySet="TblGama">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="IdUsuarioCrea" ColumnName="IdUsuarioCrea" />
+          <ScalarProperty Name="IdUsuarioModifica" ColumnName="IdUsuarioModifica" />
+          <ScalarProperty Name="FechaCrea" ColumnName="FechaCrea" />
+          <ScalarProperty Name="FechaModifica" ColumnName="FechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblMarca">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblMarca">
+        <MappingFragment StoreEntitySet="TblMarca">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="IdUsuarioCrea" ColumnName="IdUsuarioCrea" />
+          <ScalarProperty Name="IdUsuarioModifica" ColumnName="IdUsuarioModifica" />
+          <ScalarProperty Name="FechaCrea" ColumnName="FechaCrea" />
+          <ScalarProperty Name="FechaModifica" ColumnName="FechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblModelo">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblModelo">
+        <MappingFragment StoreEntitySet="TblModelo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+          <ScalarProperty Name="IdGama" ColumnName="IdGama" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Especificaciones" ColumnName="Especificaciones" />
+          <ScalarProperty Name="IdUsuarioCrea" ColumnName="IdUsuarioCrea" />
+          <ScalarProperty Name="IdUsuarioModifica" ColumnName="IdUsuarioModifica" />
+          <ScalarProperty Name="FechaCrea" ColumnName="FechaCrea" />
+          <ScalarProperty Name="FechaModifica" ColumnName="FechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblMoneda">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblMoneda">
+        <MappingFragment StoreEntitySet="TblMoneda">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Simbolo" ColumnName="Simbolo" />
+          <ScalarProperty Name="IdUsuarioCrea" ColumnName="IdUsuarioCrea" />
+          <ScalarProperty Name="IdUsuarioModifica" ColumnName="IdUsuarioModifica" />
+          <ScalarProperty Name="FechaCrea" ColumnName="FechaCrea" />
+          <ScalarProperty Name="FechaModifica" ColumnName="FechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblProductos">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblProductos">
+        <MappingFragment StoreEntitySet="TblProductos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdAlmacen" ColumnName="IdAlmacen" />
+          <ScalarProperty Name="IdCategoria" ColumnName="IdCategoria" />
+          <ScalarProperty Name="IdMarca" ColumnName="IdMarca" />
+          <ScalarProperty Name="IdUsuarioCrea" ColumnName="IdUsuarioCrea" />
+          <ScalarProperty Name="IdUsuarioModifica" ColumnName="IdUsuarioModifica" />
+          <ScalarProperty Name="FechaCrea" ColumnName="FechaCrea" />
+          <ScalarProperty Name="FechaModifica" ColumnName="FechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblProveedores">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblProveedores">
+        <MappingFragment StoreEntitySet="TblProveedores">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="RUC" ColumnName="RUC" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="IdUsuarioCrea" ColumnName="IdUsuarioCrea" />
+          <ScalarProperty Name="IdUsuarioModifica" ColumnName="IdUsuarioModifica" />
+          <ScalarProperty Name="FechaCrea" ColumnName="FechaCrea" />
+          <ScalarProperty Name="FechaModifica" ColumnName="FechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblDetalleFactura">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblDetalleFactura">
+        <MappingFragment StoreEntitySet="TblDetalleFactura">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdFactura" ColumnName="IdFactura" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+          <ScalarProperty Name="PrecioxUnd" ColumnName="PrecioxUnd" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="GarantiaDias" ColumnName="GarantiaDias" />
+          <ScalarProperty Name="FechaVenceGarantia" ColumnName="FechaVenceGarantia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblFactura">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblFactura">
+        <MappingFragment StoreEntitySet="TblFactura">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdMoneda" ColumnName="IdMoneda" />
+          <ScalarProperty Name="CodFactura" ColumnName="CodFactura" />
+          <ScalarProperty Name="DatosCliente" ColumnName="DatosCliente" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="Iva" ColumnName="Iva" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Efectivo" ColumnName="Efectivo" />
+          <ScalarProperty Name="Vuelto" ColumnName="Vuelto" />
+          <ScalarProperty Name="IdUsuarioCrea" ColumnName="IdUsuarioCrea" />
+          <ScalarProperty Name="IdUsuarioModifica" ColumnName="IdUsuarioModifica" />
+          <ScalarProperty Name="FechaCrea" ColumnName="FechaCrea" />
+          <ScalarProperty Name="FechaModifica" ColumnName="FechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblMaestra">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblMaestra">
+        <MappingFragment StoreEntitySet="TblMaestra">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdDetalleFactura" ColumnName="IdDetalleFactura" />
+          <ScalarProperty Name="IdDetalleAlmacen" ColumnName="IdDetalleAlmacen" />
+          <ScalarProperty Name="IdFactura" ColumnName="IdFactura" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblConfiguracion">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblConfiguracion">
+        <MappingFragment StoreEntitySet="TblConfiguracion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NombreEmpresa" ColumnName="NombreEmpresa" />
+          <ScalarProperty Name="RUC" ColumnName="RUC" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="IdUsurioCrea" ColumnName="IdUsurioCrea" />
+          <ScalarProperty Name="IdUsurioModifica" ColumnName="IdUsurioModifica" />
+          <ScalarProperty Name="FechaCrea" ColumnName="FechaCrea" />
+          <ScalarProperty Name="FechaModifica" ColumnName="FechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblEmpleado">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblEmpleado">
+        <MappingFragment StoreEntitySet="TblEmpleado">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PrimerNombre" ColumnName="PrimerNombre" />
+          <ScalarProperty Name="SegundoNombre" ColumnName="SegundoNombre" />
+          <ScalarProperty Name="PrimerApellido" ColumnName="PrimerApellido" />
+          <ScalarProperty Name="SegundoApellido" ColumnName="SegundoApellido" />
+          <ScalarProperty Name="Identificacion" ColumnName="Identificacion" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="Notas" ColumnName="Notas" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="IdUsuarioCrea" ColumnName="IdUsuarioCrea" />
+          <ScalarProperty Name="IdUsuarioModifica" ColumnName="IdUsuarioModifica" />
+          <ScalarProperty Name="FechaCrea" ColumnName="FechaCrea" />
+          <ScalarProperty Name="FechaModifica" ColumnName="FechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblRol">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblRol">
+        <MappingFragment StoreEntitySet="TblRol">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="IdUsuarioCrea" ColumnName="IdUsuarioCrea" />
+          <ScalarProperty Name="IdUsuarioModifica" ColumnName="IdUsuarioModifica" />
+          <ScalarProperty Name="FechaCrea" ColumnName="FechaCrea" />
+          <ScalarProperty Name="FechaModifica" ColumnName="FechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblUserRol">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblUserRol">
+        <MappingFragment StoreEntitySet="TblUserRol">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdRol" ColumnName="IdRol" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="IdUsuarioCrea" ColumnName="IdUsuarioCrea" />
+          <ScalarProperty Name="IdUsuarioModifica" ColumnName="IdUsuarioModifica" />
+          <ScalarProperty Name="FechaCrea" ColumnName="FechaCrea" />
+          <ScalarProperty Name="FechaModifica" ColumnName="FechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblUsuario">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblUsuario">
+        <MappingFragment StoreEntitySet="TblUsuario">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+          <ScalarProperty Name="Session" ColumnName="Session" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="IdUsuarioCrea" ColumnName="IdUsuarioCrea" />
+          <ScalarProperty Name="IdUsuarioModifica" ColumnName="IdUsuarioModifica" />
+          <ScalarProperty Name="FechaCrea" ColumnName="FechaCrea" />
+          <ScalarProperty Name="FechaModifica" ColumnName="FechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

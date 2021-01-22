@@ -1,0 +1,37 @@
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\DataModel\bin\Debug\DataModel.dll.config
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\DataModel\bin\Debug\DataModel.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\DataModel\bin\Debug\DataModel.pdb
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\DataModel\bin\Debug\EntityFramework.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\DataModel\bin\Debug\EntityFramework.xml
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\DataModel\obj\Debug\DataModel.csproj.CoreCompileInputs.cache
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\DataModel\obj\Debug\DataModel.csproj.CopyComplete
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\DataModel\obj\Debug\DataModel.dll
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\DataModel\obj\Debug\DataModel.pdb
+C:\Users\Infraestructura\Documents\Visual Studio 2017\Proyectos\SMARTZONE\Solution\DataModel\obj\Debug\DataModel.csprojAssemblyReference.cache
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\DataModel\bin\Debug\DataModel.dll.config
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\DataModel\bin\Debug\DataModel.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\DataModel\bin\Debug\DataModel.pdb
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\DataModel\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\DataModel\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\DataModel\obj\Debug\DataModel.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\DataModel\obj\Debug\DataModel.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\Proyectos\Solution\DataModel\obj\Debug\DataModel.pdb
+C:\Users\1234\Desktop\SMARTZONE\Solution\DataModel\bin\Debug\DataModel.dll.config
+C:\Users\1234\Desktop\SMARTZONE\Solution\DataModel\bin\Debug\DataModel.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\DataModel\bin\Debug\DataModel.pdb
+C:\Users\1234\Desktop\SMARTZONE\Solution\DataModel\bin\Debug\EntityFramework.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\DataModel\bin\Debug\EntityFramework.xml
+C:\Users\1234\Desktop\SMARTZONE\Solution\DataModel\obj\Debug\DataModel.csproj.CopyComplete
+C:\Users\1234\Desktop\SMARTZONE\Solution\DataModel\obj\Debug\DataModel.dll
+C:\Users\1234\Desktop\SMARTZONE\Solution\DataModel\obj\Debug\DataModel.pdb
+C:\Users\1234\Desktop\SMARTZONE\Solution\DataModel\obj\Debug\DataModel.csprojAssemblyReference.cache
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\DataModel\bin\Debug\DataModel.dll.config
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\DataModel\bin\Debug\DataModel.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\DataModel\bin\Debug\DataModel.pdb
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\DataModel\bin\Debug\EntityFramework.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\DataModel\bin\Debug\EntityFramework.xml
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\DataModel\obj\Debug\DataModel.csprojAssemblyReference.cache
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\DataModel\obj\Debug\DataModel.csproj.CopyComplete
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\DataModel\obj\Debug\DataModel.dll
+C:\Users\1234\Downloads\SMARTZONE\SMARTZONE\Solution\DataModel\obj\Debug\DataModel.pdb

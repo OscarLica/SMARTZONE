@@ -1,0 +1,44 @@
+﻿.first-menu {
+    margin-right: auto;
+    background-color: #374050;
+    height: 100px;
+    width: 67px;
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.7s;
+}
+
+    .first-menu .list-group-item:hover {
+        background-color: #f6f6f6;
+    }
+
+    .first-menu a {
+        white-space: nowrap;
+        color: #8e8e8e;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+
+        .first-menu a span {
+            opacity: 0;
+            visibility: hidden;
+            margin-left: 10px;
+        }
+
+    .first-menu:hover span {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .first-menu:hover {
+        width: 250px;
+    }
+
+.mr-2 {
+    margin-top: 23px;
+    margin-left: -31px;
+}

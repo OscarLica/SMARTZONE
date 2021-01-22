@@ -1,0 +1,316 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #0094ff;
+    height: 80px;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+.titulo {
+    font-size: 70px;
+    color: #fff;   
+}
+
+.footer {
+    background-color: #0094ff;
+}
+
+.MainSection {
+    position: absolute;
+    padding: 10px;
+    background-color: #ebebeb;
+    height: calc(100% - 90px);
+    width: 100%;
+    display: flex;
+}
+
+.MenuLateral {
+    background-color: #808080;
+    height: calc(100% - 20px);
+    width: 200px;
+}
+
+.Contenido {
+    background-color: #fff;
+    height: 700px; /*calc(100% - 20px);*/
+    width: calc(100% - 260px);
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*OCULTA LOS SCROLL*/
+/*::-webkit-scrollbar {
+    display: none;
+}*/
+/*****FORMULARIOS******/
+
+
+.GroupDiv {
+    width: 90%;
+    display: block;
+    margin: auto;
+    border: #d5d5d5 solid 1px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 0.3cm;
+    padding: 10px;
+    text-align: center;
+}
+
+.btnPrimary, .btnSecundary, .btnSuccess, .btnCancel {
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    color: #fff;
+    border-radius: 0.2cm;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.btnPrimary {
+    background-color: #0094ff;
+}
+
+.btnSecundary {
+    background-color: #808080;
+}
+
+.btnSuccess {
+    background-color: #08bb1f;
+}
+
+.btnCancel {
+    background-color: #ff0000;
+}
+
+    .btnPrimary:hover {
+        background-color: #035087;
+    }
+
+    .btnSecundary:hover {
+        background-color: #656565;
+    }
+
+.txtForm {
+    padding: 10px;
+    border-radius: 0.2cm;
+    width: 80%;
+}
+
+.txtForm1 {
+    padding: 10px;
+    border-radius: 0.2cm;
+    width: 50%;
+}
+
+.txtFormLista {
+    padding: 10px;
+    border-radius: 0.2cm;
+    width: 20%;
+}
+
+.txtFormLista2 {
+    padding: 10px;
+    border-radius: 0.2cm;
+    width: 5%;
+}
+
+.txtFormLista3 {
+    padding: 10px;
+    border-radius: 0.2cm;
+    width: 18%;
+}
+
+.txtForm11 { /*se usa en la facturacion*/
+    padding: 10px;
+    border-radius: 0.2cm;
+    width: 75%;
+}
+
+.txtFormF { /*se usa en la facturacion*/
+    padding: 10px;
+    border-radius: 0.2cm;
+    width: 30%;
+}
+.txtFormF2 { /*se usa en la facturacion*/
+    padding: 10px;
+    border-radius: 0.2cm;
+    width: 8%;
+    text-align: center;
+    margin-right: 40px;
+}
+.txtFormRUC { /*se usa en la facturacion*/
+    padding: 10px;
+    border: 0;
+    width: 8%;
+    text-align: center;
+    margin-right: 40px;
+    background-color:#08bb1f;
+}
+
+.txtForm2 { /*para los textboxxt*/
+    padding: 10px;
+    border-radius:5px;
+    width: 10%;
+}
+
+.txtEspecificaciones {
+    height:100px;
+    padding: 10px;
+    border-radius: 0.2cm;
+    width: 50%;
+    resize:none;
+}
+
+.txtEspecificaciones2 {
+    height: 70px;
+    padding: 10px;
+    border-radius: 0.2cm;
+    width: 70%;
+    resize: none;
+}
+
+.TblForm {
+    width: 100%;
+}
+
+    .TblForm th {
+        background-color:#035087;
+        color:#fff;
+        padding:5px;
+    }
+
+    .TblForm td {
+        padding: 5px;
+        border-bottom: 1px solid #035087;
+    }
+
+/*****MODALES******/
+.Modal {
+    position: fixed;
+    background-color: rgba(0,0,0, 0.3);
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+    opacity: 0;
+}
+
+.ModalContent {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #fff;
+    min-height: 200px;
+    border-radius: 0.5cm;
+    overflow: hidden;
+}
+
+.ModalContentFac {
+    width: 70%;
+    height:50%;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #fff;
+    min-height: 200px;
+    border-radius: 0.5cm;
+    overflow: hidden;
+}
+
+.ModalContentCat {
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #fff;
+    min-height: 200px;
+    border-radius: 0.5cm;
+    overflow: hidden;
+}
+
+.ModalContentModelo {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #fff;
+    min-height: 200px;
+    border-radius: 0.5cm;
+    overflow: hidden;
+}
+
+.ModalTitle {
+    font-size: 26px;
+    padding: 10px;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    display: block;
+    background-color: #0094ff;
+}
+
+.ModalActions, Content {
+    padding: 10px;
+    color: #656565;
+    font-family: Arial;
+    font-weight: bold;
+    margin: auto;
+    display: block;
+}
+
+    .ModalActions label {
+        display: block;
+        margin: 10px;
+    }
+
+/****RESPONSIBE***/
+@media(max-width: 700px) {
+    .ModalContent {
+        width: 100%;
+        margin: auto;
+        margin-top: 0px;
+        background-color: #fff;
+        min-height: 100%;
+        border-radius: 0cm;
+    }
+
+    .MenuLateral {
+        width: 50px;
+    }
+
+    .Contenido {
+        width: calc(100% - 110px);
+    }
+}
+
+.lblMensaje1{
+    color:#fff;
+    background-color:#ff0000;
+}
+
+.lblMensaje2 {
+    color: #fff;
+    background-color: #08bb1f;
+}
+
+#Scroll1 {
+    overflow: scroll;
+    height: 400px;
+}
+
+#Scroll2 {
+    overflow: scroll;
+    height: 300px;
+}

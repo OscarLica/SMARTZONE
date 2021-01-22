@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BDSMARTZONEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TblAlmacen">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CodBodega" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="Capacidad" Type="int" Nullable="false" />
+    <Property Name="Disponible" Type="int" Nullable="false" />
+    <Property Name="IdUsuarioCrea" Type="int" Nullable="false" />
+    <Property Name="IdUsuarioModifica" Type="int" />
+    <Property Name="FechaCrea" Type="datetime" Nullable="false" />
+    <Property Name="FechaModifica" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblProductosAlmacen">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProveedor" Type="int" Nullable="false" />
+    <Property Name="NumRecibo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SubTotal" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Iva" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ExcentoIva" Type="bit" />
+    <Property Name="Total" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IdUsuarioCrea" Type="int" Nullable="false" />
+    <Property Name="IdUsuarioModifica" Type="int" />
+    <Property Name="FechaCrea" Type="datetime" Nullable="false" />
+    <Property Name="FechaModifica" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblProductosAlmacenDet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProductosAlmacen" Type="int" Nullable="false" />
+    <Property Name="IdModelo" Type="int" Nullable="false" />
+    <Property Name="CodProducto" Type="nvarchar" MaxLength="50" />
+    <Property Name="Serie" Type="nvarchar" MaxLength="50" />
+    <Property Name="IMEI" Type="nvarchar" MaxLength="50" />
+    <Property Name="Estado" Type="bit" Nullable="false" />
+    <Property Name="PrecioC" Type="int" Nullable="false" />
+    <Property Name="PrecioV" Type="int" />
+    <Property Name="CodFactura" Type="nvarchar" MaxLength="50" />
+    <Property Name="FechaBaja" Type="datetime" />
+    <Property Name="MotivoBaja" Type="nvarchar" MaxLength="50" />
+    <Property Name="IdUsuarioCrea" Type="int" Nullable="false" />
+    <Property Name="IdUsuarioModifica" Type="int" />
+    <Property Name="FechaCrea" Type="datetime" Nullable="false" />
+    <Property Name="FechaModifica" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblCategorias">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IdUsuarioCrea" Type="int" Nullable="false" />
+    <Property Name="IdUsuarioModifica" Type="int" />
+    <Property Name="FechaCrea" Type="datetime" Nullable="false" />
+    <Property Name="FechaModifica" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblGama">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IdUsuarioCrea" Type="int" Nullable="false" />
+    <Property Name="IdUsuarioModifica" Type="int" />
+    <Property Name="FechaCrea" Type="datetime" Nullable="false" />
+    <Property Name="FechaModifica" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblMarca">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IdUsuarioCrea" Type="int" Nullable="false" />
+    <Property Name="IdUsuarioModifica" Type="int" />
+    <Property Name="FechaCrea" Type="datetime" Nullable="false" />
+    <Property Name="FechaModifica" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblModelo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdProducto" Type="int" Nullable="false" />
+    <Property Name="IdGama" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Especificaciones" Type="nvarchar" MaxLength="300" />
+    <Property Name="IdUsuarioCrea" Type="int" Nullable="false" />
+    <Property Name="IdUsuarioModifica" Type="int" />
+    <Property Name="FechaCrea" Type="datetime" Nullable="false" />
+    <Property Name="FechaModifica" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblMoneda">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Simbolo" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="IdUsuarioCrea" Type="int" Nullable="false" />
+    <Property Name="IdUsuarioModifica" Type="int" />
+    <Property Name="FechaCrea" Type="datetime" Nullable="false" />
+    <Property Name="FechaModifica" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblProductos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdAlmacen" Type="int" Nullable="false" />
+    <Property Name="IdCategoria" Type="int" Nullable="false" />
+    <Property Name="IdMarca" Type="int" Nullable="false" />
+    <Property Name="IdUsuarioCrea" Type="int" Nullable="false" />
+    <Property Name="IdUsuarioModifica" Type="int" />
+    <Property Name="FechaCrea" Type="datetime" Nullable="false" />
+    <Property Name="FechaModifica" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblProveedores">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RUC" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Direccion" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Telefono" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="IdUsuarioCrea" Type="int" Nullable="false" />
+    <Property Name="IdUsuarioModifica" Type="int" />
+    <Property Name="FechaCrea" Type="datetime" Nullable="false" />
+    <Property Name="FechaModifica" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblDetalleFactura">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdFactura" Type="int" Nullable="false" />
+    <Property Name="Cantidad" Type="int" Nullable="false" />
+    <Property Name="Descuento" Type="int" Nullable="false" />
+    <Property Name="PrecioxUnd" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Total" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="GarantiaDias" Type="int" />
+    <Property Name="FechaVenceGarantia" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblFactura">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdMoneda" Type="int" Nullable="false" />
+    <Property Name="CodFactura" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DatosCliente" Type="nvarchar" MaxLength="150" />
+    <Property Name="Estado" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="SubTotal" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Iva" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Total" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Efectivo" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Vuelto" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="IdUsuarioCrea" Type="int" Nullable="false" />
+    <Property Name="IdUsuarioModifica" Type="int" />
+    <Property Name="FechaCrea" Type="datetime" Nullable="false" />
+    <Property Name="FechaModifica" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblMaestra">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdDetalleFactura" Type="int" Nullable="false" />
+    <Property Name="IdDetalleAlmacen" Type="int" Nullable="false" />
+    <Property Name="IdFactura" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblConfiguracion">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreEmpresa" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RUC" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Direccion" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Telefono" Type="nvarchar" MaxLength="15" />
+    <Property Name="Logo" Type="varbinary(max)" />
+    <Property Name="IdUsurioCrea" Type="int" Nullable="false" />
+    <Property Name="IdUsurioModifica" Type="int" />
+    <Property Name="FechaCrea" Type="datetime" Nullable="false" />
+    <Property Name="FechaModifica" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblEmpleado">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PrimerNombre" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="SegundoNombre" Type="nvarchar" MaxLength="25" />
+    <Property Name="PrimerApellido" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="SegundoApellido" Type="nvarchar" MaxLength="25" />
+    <Property Name="Identificacion" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="Direccion" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Celular" Type="nvarchar" MaxLength="25" />
+    <Property Name="Notas" Type="nvarchar" MaxLength="25" />
+    <Property Name="Estado" Type="bit" Nullable="false" />
+    <Property Name="IdUsuarioCrea" Type="int" Nullable="false" />
+    <Property Name="IdUsuarioModifica" Type="int" />
+    <Property Name="FechaCrea" Type="datetime" Nullable="false" />
+    <Property Name="FechaModifica" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblRol">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Estado" Type="bit" Nullable="false" />
+    <Property Name="IdUsuarioCrea" Type="int" Nullable="false" />
+    <Property Name="IdUsuarioModifica" Type="int" />
+    <Property Name="FechaCrea" Type="datetime" Nullable="false" />
+    <Property Name="FechaModifica" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblUserRol">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUsuario" Type="int" Nullable="false" />
+    <Property Name="IdRol" Type="int" Nullable="false" />
+    <Property Name="Estado" Type="bit" Nullable="false" />
+    <Property Name="IdUsuarioCrea" Type="int" Nullable="false" />
+    <Property Name="IdUsuarioModifica" Type="int" />
+    <Property Name="FechaCrea" Type="datetime" Nullable="false" />
+    <Property Name="FechaModifica" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TblUsuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdEmpleado" Type="int" Nullable="false" />
+    <Property Name="Session" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" />
+    <Property Name="Estado" Type="bit" Nullable="false" />
+    <Property Name="IdUsuarioCrea" Type="int" Nullable="false" />
+    <Property Name="IdUsuarioModifica" Type="int" />
+    <Property Name="FechaCrea" Type="datetime" Nullable="false" />
+    <Property Name="FechaModifica" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_TblDetalleFactura_TblFactura">
+    <End Role="TblFactura" Type="Self.TblFactura" Multiplicity="1" />
+    <End Role="TblDetalleFactura" Type="Self.TblDetalleFactura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblFactura">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TblDetalleFactura">
+        <PropertyRef Name="IdFactura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblFactura_TblMoneda">
+    <End Role="TblMoneda" Type="Self.TblMoneda" Multiplicity="1" />
+    <End Role="TblFactura" Type="Self.TblFactura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblMoneda">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TblFactura">
+        <PropertyRef Name="IdMoneda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblModelo_TblGama">
+    <End Role="TblGama" Type="Self.TblGama" Multiplicity="1" />
+    <End Role="TblModelo" Type="Self.TblModelo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblGama">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TblModelo">
+        <PropertyRef Name="IdGama" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblModelo_TblProductos">
+    <End Role="TblProductos" Type="Self.TblProductos" Multiplicity="1" />
+    <End Role="TblModelo" Type="Self.TblModelo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblProductos">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TblModelo">
+        <PropertyRef Name="IdProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblProductos_TblAlmacen">
+    <End Role="TblAlmacen" Type="Self.TblAlmacen" Multiplicity="1" />
+    <End Role="TblProductos" Type="Self.TblProductos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblAlmacen">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TblProductos">
+        <PropertyRef Name="IdAlmacen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblProductos_TblCategorias">
+    <End Role="TblCategorias" Type="Self.TblCategorias" Multiplicity="1" />
+    <End Role="TblProductos" Type="Self.TblProductos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblCategorias">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TblProductos">
+        <PropertyRef Name="IdCategoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblProductos_TblMarca">
+    <End Role="TblMarca" Type="Self.TblMarca" Multiplicity="1" />
+    <End Role="TblProductos" Type="Self.TblProductos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblMarca">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TblProductos">
+        <PropertyRef Name="IdMarca" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblProductosAlmacen_TblProveedores">
+    <End Role="TblProveedores" Type="Self.TblProveedores" Multiplicity="1" />
+    <End Role="TblProductosAlmacen" Type="Self.TblProductosAlmacen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblProveedores">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TblProductosAlmacen">
+        <PropertyRef Name="IdProveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblProductosAlmacenDet_TblModelo">
+    <End Role="TblModelo" Type="Self.TblModelo" Multiplicity="1" />
+    <End Role="TblProductosAlmacenDet" Type="Self.TblProductosAlmacenDet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblModelo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TblProductosAlmacenDet">
+        <PropertyRef Name="IdModelo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblProductosAlmacenDet_TblProductosAlmacen">
+    <End Role="TblProductosAlmacen" Type="Self.TblProductosAlmacen" Multiplicity="1" />
+    <End Role="TblProductosAlmacenDet" Type="Self.TblProductosAlmacenDet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblProductosAlmacen">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TblProductosAlmacenDet">
+        <PropertyRef Name="IdProductosAlmacen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblUserRol_TblRol">
+    <End Role="TblRol" Type="Self.TblRol" Multiplicity="1" />
+    <End Role="TblUserRol" Type="Self.TblUserRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblRol">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TblUserRol">
+        <PropertyRef Name="IdRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblUserRol_TblUsuario">
+    <End Role="TblUsuario" Type="Self.TblUsuario" Multiplicity="1" />
+    <End Role="TblUserRol" Type="Self.TblUserRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblUsuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TblUserRol">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblUsuario_TblEmpleado">
+    <End Role="TblEmpleado" Type="Self.TblEmpleado" Multiplicity="1" />
+    <End Role="TblUsuario" Type="Self.TblUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblEmpleado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TblUsuario">
+        <PropertyRef Name="IdEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BDSMARTZONEModelStoreContainer">
+    <EntitySet Name="TblAlmacen" EntityType="Self.TblAlmacen" Schema="ALM" store:Type="Tables" />
+    <EntitySet Name="TblProductosAlmacen" EntityType="Self.TblProductosAlmacen" Schema="ALM" store:Type="Tables" />
+    <EntitySet Name="TblProductosAlmacenDet" EntityType="Self.TblProductosAlmacenDet" Schema="ALM" store:Type="Tables" />
+    <EntitySet Name="TblCategorias" EntityType="Self.TblCategorias" Schema="CAT" store:Type="Tables" />
+    <EntitySet Name="TblGama" EntityType="Self.TblGama" Schema="CAT" store:Type="Tables" />
+    <EntitySet Name="TblMarca" EntityType="Self.TblMarca" Schema="CAT" store:Type="Tables" />
+    <EntitySet Name="TblModelo" EntityType="Self.TblModelo" Schema="CAT" store:Type="Tables" />
+    <EntitySet Name="TblMoneda" EntityType="Self.TblMoneda" Schema="CAT" store:Type="Tables" />
+    <EntitySet Name="TblProductos" EntityType="Self.TblProductos" Schema="CAT" store:Type="Tables" />
+    <EntitySet Name="TblProveedores" EntityType="Self.TblProveedores" Schema="CAT" store:Type="Tables" />
+    <EntitySet Name="TblDetalleFactura" EntityType="Self.TblDetalleFactura" Schema="FAC" store:Type="Tables" />
+    <EntitySet Name="TblFactura" EntityType="Self.TblFactura" Schema="FAC" store:Type="Tables" />
+    <EntitySet Name="TblMaestra" EntityType="Self.TblMaestra" Schema="FAC" store:Type="Tables" />
+    <EntitySet Name="TblConfiguracion" EntityType="Self.TblConfiguracion" Schema="SEG" store:Type="Tables" />
+    <EntitySet Name="TblEmpleado" EntityType="Self.TblEmpleado" Schema="SEG" store:Type="Tables" />
+    <EntitySet Name="TblRol" EntityType="Self.TblRol" Schema="SEG" store:Type="Tables" />
+    <EntitySet Name="TblUserRol" EntityType="Self.TblUserRol" Schema="SEG" store:Type="Tables" />
+    <EntitySet Name="TblUsuario" EntityType="Self.TblUsuario" Schema="SEG" store:Type="Tables" />
+    <AssociationSet Name="FK_TblDetalleFactura_TblFactura" Association="Self.FK_TblDetalleFactura_TblFactura">
+      <End Role="TblFactura" EntitySet="TblFactura" />
+      <End Role="TblDetalleFactura" EntitySet="TblDetalleFactura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblFactura_TblMoneda" Association="Self.FK_TblFactura_TblMoneda">
+      <End Role="TblMoneda" EntitySet="TblMoneda" />
+      <End Role="TblFactura" EntitySet="TblFactura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblModelo_TblGama" Association="Self.FK_TblModelo_TblGama">
+      <End Role="TblGama" EntitySet="TblGama" />
+      <End Role="TblModelo" EntitySet="TblModelo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblModelo_TblProductos" Association="Self.FK_TblModelo_TblProductos">
+      <End Role="TblProductos" EntitySet="TblProductos" />
+      <End Role="TblModelo" EntitySet="TblModelo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblProductos_TblAlmacen" Association="Self.FK_TblProductos_TblAlmacen">
+      <End Role="TblAlmacen" EntitySet="TblAlmacen" />
+      <End Role="TblProductos" EntitySet="TblProductos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblProductos_TblCategorias" Association="Self.FK_TblProductos_TblCategorias">
+      <End Role="TblCategorias" EntitySet="TblCategorias" />
+      <End Role="TblProductos" EntitySet="TblProductos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblProductos_TblMarca" Association="Self.FK_TblProductos_TblMarca">
+      <End Role="TblMarca" EntitySet="TblMarca" />
+      <End Role="TblProductos" EntitySet="TblProductos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblProductosAlmacen_TblProveedores" Association="Self.FK_TblProductosAlmacen_TblProveedores">
+      <End Role="TblProveedores" EntitySet="TblProveedores" />
+      <End Role="TblProductosAlmacen" EntitySet="TblProductosAlmacen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblProductosAlmacenDet_TblModelo" Association="Self.FK_TblProductosAlmacenDet_TblModelo">
+      <End Role="TblModelo" EntitySet="TblModelo" />
+      <End Role="TblProductosAlmacenDet" EntitySet="TblProductosAlmacenDet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblProductosAlmacenDet_TblProductosAlmacen" Association="Self.FK_TblProductosAlmacenDet_TblProductosAlmacen">
+      <End Role="TblProductosAlmacen" EntitySet="TblProductosAlmacen" />
+      <End Role="TblProductosAlmacenDet" EntitySet="TblProductosAlmacenDet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblUserRol_TblRol" Association="Self.FK_TblUserRol_TblRol">
+      <End Role="TblRol" EntitySet="TblRol" />
+      <End Role="TblUserRol" EntitySet="TblUserRol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblUserRol_TblUsuario" Association="Self.FK_TblUserRol_TblUsuario">
+      <End Role="TblUsuario" EntitySet="TblUsuario" />
+      <End Role="TblUserRol" EntitySet="TblUserRol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblUsuario_TblEmpleado" Association="Self.FK_TblUsuario_TblEmpleado">
+      <End Role="TblEmpleado" EntitySet="TblEmpleado" />
+      <End Role="TblUsuario" EntitySet="TblUsuario" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

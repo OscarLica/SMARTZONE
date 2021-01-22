@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a1fa715f6dd24e4a9316e42fb4d3233a" Name="Diagram1">
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblAlmacen" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblProductosAlmacen" Width="1.5" PointX="5.25" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblProductosAlmacenDet" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblCategorias" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblGama" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblMarca" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblModelo" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblMoneda" Width="1.5" PointX="7.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblProductos" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblProveedores" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblDetalleFactura" Width="1.5" PointX="12.25" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblFactura" Width="1.5" PointX="10" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblMaestra" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblConfiguracion" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblEmpleado" Width="1.5" PointX="7.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblRol" Width="1.5" PointX="10" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblUserRol" Width="1.5" PointX="12.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblUsuario" Width="1.5" PointX="10" PointY="7.375" IsExpanded="true" />
+        <AssociationConnector Association="BDSMARTZONEModel.FK_TblProductos_TblAlmacen" ManuallyRouted="false" />
+        <AssociationConnector Association="BDSMARTZONEModel.FK_TblProductosAlmacen_TblProveedores" ManuallyRouted="false" />
+        <AssociationConnector Association="BDSMARTZONEModel.FK_TblProductosAlmacenDet_TblProductosAlmacen" ManuallyRouted="false" />
+        <AssociationConnector Association="BDSMARTZONEModel.FK_TblProductosAlmacenDet_TblModelo" ManuallyRouted="false" />
+        <AssociationConnector Association="BDSMARTZONEModel.FK_TblProductos_TblCategorias" ManuallyRouted="false" />
+        <AssociationConnector Association="BDSMARTZONEModel.FK_TblModelo_TblGama" ManuallyRouted="false" />
+        <AssociationConnector Association="BDSMARTZONEModel.FK_TblProductos_TblMarca" ManuallyRouted="false" />
+        <AssociationConnector Association="BDSMARTZONEModel.FK_TblModelo_TblProductos" ManuallyRouted="false" />
+        <AssociationConnector Association="BDSMARTZONEModel.FK_TblFactura_TblMoneda" ManuallyRouted="false" />
+        <AssociationConnector Association="BDSMARTZONEModel.FK_TblDetalleFactura_TblFactura" ManuallyRouted="false" />
+        <AssociationConnector Association="BDSMARTZONEModel.FK_TblUsuario_TblEmpleado" ManuallyRouted="false" />
+        <AssociationConnector Association="BDSMARTZONEModel.FK_TblUserRol_TblRol" ManuallyRouted="false" />
+        <AssociationConnector Association="BDSMARTZONEModel.FK_TblUserRol_TblUsuario" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
