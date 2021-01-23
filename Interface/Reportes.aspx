@@ -43,10 +43,12 @@
             <select class="txtForm" id="TipoReporte">
                 <option value="1"> Reporte compras</option>
                 <option value="2"> Reporte ventas</option>
+                <option value="3"> Reporte producto en bodega</option>
+                 <option value="4"> Reporte producto con garantia</option>
             </select>
             <input type="button" id="GenerateReport" data-generate-report="true" class="btnSuccess" value="Generar" />
         </div>
-        <div class="Content">
+        <div class="Content ModalActions">
             <label id="lblSinResultados">No se encontraron resultados</label>
             <iframe width="1000" height="600" id="embedReporte" class="embed-responsive-item"></iframe>
             <div class="ModalActions" style="text-align: center">

@@ -22,9 +22,14 @@ namespace DataModel.Controllers
                     return new ReportResponse { Path = "ReportCompras.rdlc", Datos = ReporteCompras() };
                 case 2:
                     return new ReportResponse { Path = "ReportVentas.rdlc", Datos = ReporteVentas() };
+                case 3:
+                    return new ReportResponse { Path = "ReporteProductosBodega.rdlc", Datos = new ProductosAlmacenControllers().ReporteProductosAlmacen() };
+                case 4:
+                    return new ReportResponse { Path = "ReporteProductoGarantia.rdlc", Datos = new FacturaControllers().ProducosGarantia() };
             }
             return new ReportResponse();
         }
+
 
         public List<ReporteCompras> ReporteCompras()
         {

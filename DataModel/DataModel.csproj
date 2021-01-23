@@ -65,6 +65,12 @@
     <Compile Include="Controllers\RolControllers.cs" />
     <Compile Include="Controllers\UserRolControllers.cs" />
     <Compile Include="Controllers\UsuarioControllers.cs" />
+    <Compile Include="DetalleCompra.cs">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleVenta.cs">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entidad\EntidadFacturaDetalle.cs" />
     <Compile Include="Entidad\EntidadModelo.cs" />
     <Compile Include="Entidad\EntidadFactura.cs" />
@@ -74,8 +80,10 @@
     <Compile Include="Entidad\EntidadProductosAlmacen.cs" />
     <Compile Include="Entidad\ListaFacFecha.cs" />
     <Compile Include="Entidad\ListaEntidad.cs" />
+    <Compile Include="Entidad\ProductosGarantia.cs" />
     <Compile Include="Entidad\ReporteCompras.cs" />
     <Compile Include="Entidad\ReporteVentas.cs" />
+    <Compile Include="Entidad\ReportProductosAlmancen.cs" />
     <Compile Include="Entidad\ReportResponse.cs" />
     <Compile Include="Modelo.Context.cs">
       <AutoGen>True</AutoGen>
@@ -97,6 +105,9 @@
       <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
     <Compile Include="TblCategorias.cs">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TblCompras.cs">
       <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
     <Compile Include="TblConfiguracion.cs">
@@ -145,6 +156,9 @@
       <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
     <Compile Include="TblUsuario.cs">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TblVentas.cs">
       <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
   </ItemGroup>

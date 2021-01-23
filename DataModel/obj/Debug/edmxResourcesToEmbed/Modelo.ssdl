@@ -137,6 +137,38 @@
     <Property Name="FechaCrea" Type="datetime" Nullable="false" />
     <Property Name="FechaModifica" Type="datetime" />
   </EntityType>
+  <EntityType Name="DetalleCompra">
+    <Key>
+      <PropertyRef Name="IdDetalleCompra" />
+    </Key>
+    <Property Name="IdDetalleCompra" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdCompra" Type="int" Nullable="false" />
+    <Property Name="IdProducto" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DetalleVenta">
+    <Key>
+      <PropertyRef Name="IdDetalleVenta" />
+    </Key>
+    <Property Name="IdDetalleVenta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Idventa" Type="int" Nullable="false" />
+    <Property Name="IdProducto" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblCompras">
+    <Key>
+      <PropertyRef Name="IdCompra" />
+    </Key>
+    <Property Name="IdCompra" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NoFactura" Type="varchar" MaxLength="100" />
+    <Property Name="FechaCompra" Type="datetime" Nullable="false" />
+    <Property Name="Iva" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="Total" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="SubTotal" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="IdProveedor" Type="int" Nullable="false" />
+    <Property Name="Anulada" Type="bit" />
+    <Property Name="MotivoAnulada" Type="nvarchar(max)" />
+    <Property Name="FechaAnulada" Type="datetime" />
+    <Property Name="IdUsuario" Type="int" Nullable="false" />
+  </EntityType>
   <EntityType Name="TblDetalleFactura">
     <Key>
       <PropertyRef Name="Id" />
@@ -177,6 +209,22 @@
     <Property Name="IdDetalleFactura" Type="int" Nullable="false" />
     <Property Name="IdDetalleAlmacen" Type="int" Nullable="false" />
     <Property Name="IdFactura" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TblVentas">
+    <Key>
+      <PropertyRef Name="Idventa" />
+    </Key>
+    <Property Name="Idventa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NoFactura" Type="varchar" MaxLength="100" />
+    <Property Name="FechaVenta" Type="datetime" Nullable="false" />
+    <Property Name="Iva" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="Total" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="SubTotal" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="Cliente" Type="int" Nullable="false" />
+    <Property Name="Anulada" Type="bit" />
+    <Property Name="MotivoAnulada" Type="nvarchar(max)" />
+    <Property Name="FechaAnulada" Type="datetime" />
+    <Property Name="IdUsuario" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="TblConfiguracion">
     <Key>
@@ -407,6 +455,30 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FKDetCompra">
+    <End Role="TblCompras" Type="Self.TblCompras" Multiplicity="1" />
+    <End Role="DetalleCompra" Type="Self.DetalleCompra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblCompras">
+        <PropertyRef Name="IdCompra" />
+      </Principal>
+      <Dependent Role="DetalleCompra">
+        <PropertyRef Name="IdCompra" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKDetVentas">
+    <End Role="TblVentas" Type="Self.TblVentas" Multiplicity="1" />
+    <End Role="DetalleVenta" Type="Self.DetalleVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblVentas">
+        <PropertyRef Name="Idventa" />
+      </Principal>
+      <Dependent Role="DetalleVenta">
+        <PropertyRef Name="Idventa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="BDSMARTZONEModelStoreContainer">
     <EntitySet Name="TblAlmacen" EntityType="Self.TblAlmacen" Schema="ALM" store:Type="Tables" />
     <EntitySet Name="TblProductosAlmacen" EntityType="Self.TblProductosAlmacen" Schema="ALM" store:Type="Tables" />
@@ -418,9 +490,13 @@
     <EntitySet Name="TblMoneda" EntityType="Self.TblMoneda" Schema="CAT" store:Type="Tables" />
     <EntitySet Name="TblProductos" EntityType="Self.TblProductos" Schema="CAT" store:Type="Tables" />
     <EntitySet Name="TblProveedores" EntityType="Self.TblProveedores" Schema="CAT" store:Type="Tables" />
+    <EntitySet Name="DetalleCompra" EntityType="Self.DetalleCompra" Schema="FAC" store:Type="Tables" />
+    <EntitySet Name="DetalleVenta" EntityType="Self.DetalleVenta" Schema="FAC" store:Type="Tables" />
+    <EntitySet Name="TblCompras" EntityType="Self.TblCompras" Schema="FAC" store:Type="Tables" />
     <EntitySet Name="TblDetalleFactura" EntityType="Self.TblDetalleFactura" Schema="FAC" store:Type="Tables" />
     <EntitySet Name="TblFactura" EntityType="Self.TblFactura" Schema="FAC" store:Type="Tables" />
     <EntitySet Name="TblMaestra" EntityType="Self.TblMaestra" Schema="FAC" store:Type="Tables" />
+    <EntitySet Name="TblVentas" EntityType="Self.TblVentas" Schema="FAC" store:Type="Tables" />
     <EntitySet Name="TblConfiguracion" EntityType="Self.TblConfiguracion" Schema="SEG" store:Type="Tables" />
     <EntitySet Name="TblEmpleado" EntityType="Self.TblEmpleado" Schema="SEG" store:Type="Tables" />
     <EntitySet Name="TblRol" EntityType="Self.TblRol" Schema="SEG" store:Type="Tables" />
@@ -477,6 +553,14 @@
     <AssociationSet Name="FK_TblUsuario_TblEmpleado" Association="Self.FK_TblUsuario_TblEmpleado">
       <End Role="TblEmpleado" EntitySet="TblEmpleado" />
       <End Role="TblUsuario" EntitySet="TblUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FKDetCompra" Association="Self.FKDetCompra">
+      <End Role="TblCompras" EntitySet="TblCompras" />
+      <End Role="DetalleCompra" EntitySet="DetalleCompra" />
+    </AssociationSet>
+    <AssociationSet Name="FKDetVentas" Association="Self.FKDetVentas">
+      <End Role="TblVentas" EntitySet="TblVentas" />
+      <End Role="DetalleVenta" EntitySet="DetalleVenta" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

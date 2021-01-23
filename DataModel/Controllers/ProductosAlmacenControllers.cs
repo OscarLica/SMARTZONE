@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataModel.Entidad;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,24 @@ namespace DataModel.Controllers
 
         BDSMARTZONEEntities Model = new BDSMARTZONEEntities();
 
+        public List<ReportProductosAlmancen> ReporteProductosAlmacen()
+        {
+            var query = (from al in Model.TblProductosAlmacen
+                         join pad in Model.TblProductosAlmacenDet on al.Id equals pad.IdProductosAlmacen
+                         join modelo in Model.TblModelo on pad.IdModelo equals modelo.Id
+                         join producto in Model.TblProductos on modelo.IdProducto equals producto.Id
+                         join mar in Model.TblMarca on producto.IdMarca equals mar.Id
+                         join cat in Model.TblCategorias on producto.IdCategoria equals cat.Id
+                         group new { al, cat, modelo, mar } by new { al.Id, idcat = cat.Id, idmol = modelo.Id, idmar = mar.Id, cat.Descripcion, mdes = modelo.Descripcion, marDes = mar.Descripcion } into gr
+                         select new ReportProductosAlmancen
+                         {
+                             IdAlmacen = gr.Key.Id,
+                             Producto = gr.Key.Descripcion + " " + gr.Key.mdes + " " + gr.Key.marDes,
+                             Total = gr.Count()
+                         }).ToList();
+
+            return query;
+        }
         //Funcion para calcular el consecutivo de N° Recibo
         public Object GetNumRecibo()
         {
@@ -155,7 +174,7 @@ namespace DataModel.Controllers
             var ListaDetalle = new List<Entidad.EntidadProductoAlmacenDet>();
             try
             {
-               
+
                 if (string.IsNullOrEmpty(Parametro))
                 {
                     //buscar por parametro vacio
@@ -313,7 +332,7 @@ namespace DataModel.Controllers
                 //buscar por todos
                 var Lista = (from PA in Model.TblProductosAlmacenDet
                              join M in Model.TblModelo on PA.IdModelo equals M.Id
-                             where PA.IdProductosAlmacen == id && PA.Serie.Contains(Parametro) 
+                             where PA.IdProductosAlmacen == id && PA.Serie.Contains(Parametro)
                              && !PA.Estado
                              select new Entidad.EntidadProductoAlmacenDet
                              {
@@ -364,7 +383,7 @@ namespace DataModel.Controllers
 
                 return ListaDetalle;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return ListaDetalle;
             }
@@ -767,9 +786,9 @@ namespace DataModel.Controllers
                 List<Entidad.EntidadProductosAlmacen> ListaMaestro = new List<Entidad.EntidadProductosAlmacen>();
 
                 var Lista = (from PA in Model.TblProductosAlmacen
-                             let det =(from pad in Model.TblProductosAlmacenDet
-                                       where pad.IdProductosAlmacen == PA.Id && !pad.Estado
-                                       select pad)
+                             let det = (from pad in Model.TblProductosAlmacenDet
+                                        where pad.IdProductosAlmacen == PA.Id && !pad.Estado
+                                        select pad)
                              join P in Model.TblProveedores on PA.IdProveedor equals P.Id
                              where det.Any()
                              select new Entidad.EntidadProductosAlmacen
@@ -785,7 +804,7 @@ namespace DataModel.Controllers
                 {
                     Entidad.EntidadProductosAlmacen DT = new Entidad.EntidadProductosAlmacen();
                     DT = d;
-                    DT.CantExistencia = Existencia(d.Id,false);
+                    DT.CantExistencia = Existencia(d.Id, false);
 
                     if (d.ExcentoIva == true)
                     {
@@ -959,8 +978,10 @@ namespace DataModel.Controllers
                     //Buscar por Proveedor
                     var PorProveedor = (from PA in Model.TblProductosAlmacen
                                         join P in Model.TblProveedores on PA.IdProveedor equals P.Id
-                                        let det =(from pad in Model.TblProductosAlmacenDet where 
-                                                  pad.IdProductosAlmacen == PA.Id && !pad.Estado select pad)
+                                        let det = (from pad in Model.TblProductosAlmacenDet
+                                                   where
+          pad.IdProductosAlmacen == PA.Id && !pad.Estado
+                                                   select pad)
                                         where P.Descripcion.Contains(Producto) && det.Any()
                                         select new Entidad.EntidadProductosAlmacen
                                         {

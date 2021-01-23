@@ -21,6 +21,12 @@ namespace Interface
             FacturaControllers FC = new FacturaControllers();
             return FC.ListarFacturas();
         }
+
+        public static Object ProductoGarantia()
+        {
+            FacturaControllers FC = new FacturaControllers();
+            return FC.ProducosGarantia();
+        }
         [WebMethod]
         public static Object Buscar(string Parametro)
         {

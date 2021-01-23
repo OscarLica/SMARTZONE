@@ -73,6 +73,8 @@ namespace Interface
             _TblDetalleFactura.GarantiaDias = DiasGarantia;
             //Guardamos el maestro detalle
             int parametro = FC.GuardarMaestroDetalle(_TblFactura, _TblDetalleFactura, IdProAlmacenDet);
+
+
             //retornamos el detalle
             return FC.GetDetalleFactura(parametro);
         }

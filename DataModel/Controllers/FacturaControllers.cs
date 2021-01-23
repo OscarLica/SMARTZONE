@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataModel.Entidad;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -14,6 +15,34 @@ namespace DataModel.Controllers
         TblFactura ValidadEntidad = new TblFactura();
 
         //Metodo para Listar Todos los Elementos de Productos
+
+        public List<ProductosGarantia> ProducosGarantia() {
+
+            var fecha = DateTime.Now;
+            var Context = Model;
+            var result = (from al in Context.TblFactura
+                         join detfac in Context.TblDetalleFactura on al.Id equals detfac.IdFactura
+                         join mae in Context.TblMaestra on detfac.Id equals mae.IdDetalleFactura
+                         join pad in Context.TblProductosAlmacenDet on mae.IdDetalleAlmacen equals pad.Id
+                         join modelo in Context.TblModelo on pad.IdModelo equals modelo.Id
+                         join producto in Context.TblProductos on modelo.IdProducto equals producto.Id
+                         join mar in Context.TblMarca on producto.IdMarca equals mar.Id
+                         join cat in Context.TblCategorias on producto.IdCategoria equals cat.Id
+                         where detfac.FechaVenceGarantia != null && detfac.FechaVenceGarantia.Value > fecha
+                         group new { al, cat, modelo, mar, detfac } by new { al.CodFactura, cat.Descripcion, mdes = modelo.Descripcion, marDes = mar.Descripcion } into gr
+                         select new ProductosGarantia
+                         {
+                             Factura = gr.Key.CodFactura,
+                             Producto = gr.Key.Descripcion + " " + gr.Key.mdes + " " + gr.Key.marDes,
+                             FechaFinGarantia = (DateTime) gr.FirstOrDefault().detfac.FechaVenceGarantia
+                            
+                         }).ToList();
+            foreach (var item in result)
+            {
+                item.DiasRestantes = (int)(item.FechaFinGarantia - fecha).TotalDays;
+            }
+            return result;
+        }
         public List<Entidad.EntidadFactura> ListarFacturas()
         {
             try

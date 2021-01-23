@@ -93,6 +93,7 @@
     <Content Include="img\ConfiguracionX.png" />
     <Content Include="img\FacturacionX.png" />
     <Content Include="img\icon.png" />
+    <Content Include="img\logo.jpg" />
     <Content Include="img\logout.jpg" />
     <Content Include="img\Modelos.png" />
     <Content Include="img\Monedas.png" />
@@ -273,6 +274,8 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ReportCompras.rdlc" />
+    <EmbeddedResource Include="ReporteProductoGarantia.rdlc" />
+    <EmbeddedResource Include="ReporteProductosBodega.rdlc" />
     <EmbeddedResource Include="ReportVentas.rdlc" />
   </ItemGroup>
   <PropertyGroup>

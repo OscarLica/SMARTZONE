@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="a1fa715f6dd24e4a9316e42fb4d3233a" Name="Diagram1">
+      <Diagram DiagramId="bda60959dde9434da84a8d70ac0de837" Name="Diagram1">
         <EntityTypeShape EntityType="BDSMARTZONEModel.TblAlmacen" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
         <EntityTypeShape EntityType="BDSMARTZONEModel.TblProductosAlmacen" Width="1.5" PointX="5.25" PointY="10.5" IsExpanded="true" />
         <EntityTypeShape EntityType="BDSMARTZONEModel.TblProductosAlmacenDet" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
@@ -15,10 +15,14 @@
         <EntityTypeShape EntityType="BDSMARTZONEModel.TblMoneda" Width="1.5" PointX="7.75" PointY="12.75" IsExpanded="true" />
         <EntityTypeShape EntityType="BDSMARTZONEModel.TblProductos" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
         <EntityTypeShape EntityType="BDSMARTZONEModel.TblProveedores" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.DetalleCompra" Width="1.5" PointX="17" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.DetalleVenta" Width="1.5" PointX="15" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblCompras" Width="1.5" PointX="14.75" PointY="5" IsExpanded="true" />
         <EntityTypeShape EntityType="BDSMARTZONEModel.TblDetalleFactura" Width="1.5" PointX="12.25" PointY="12.75" IsExpanded="true" />
         <EntityTypeShape EntityType="BDSMARTZONEModel.TblFactura" Width="1.5" PointX="10" PointY="12" IsExpanded="true" />
         <EntityTypeShape EntityType="BDSMARTZONEModel.TblMaestra" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="BDSMARTZONEModel.TblConfiguracion" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblVentas" Width="1.5" PointX="12.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDSMARTZONEModel.TblConfiguracion" Width="1.5" PointX="0.75" PointY="14.75" IsExpanded="true" />
         <EntityTypeShape EntityType="BDSMARTZONEModel.TblEmpleado" Width="1.5" PointX="7.75" PointY="7" IsExpanded="true" />
         <EntityTypeShape EntityType="BDSMARTZONEModel.TblRol" Width="1.5" PointX="10" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="BDSMARTZONEModel.TblUserRol" Width="1.5" PointX="12.25" PointY="7.5" IsExpanded="true" />
@@ -32,6 +36,8 @@
         <AssociationConnector Association="BDSMARTZONEModel.FK_TblProductos_TblMarca" ManuallyRouted="false" />
         <AssociationConnector Association="BDSMARTZONEModel.FK_TblModelo_TblProductos" ManuallyRouted="false" />
         <AssociationConnector Association="BDSMARTZONEModel.FK_TblFactura_TblMoneda" ManuallyRouted="false" />
+        <AssociationConnector Association="BDSMARTZONEModel.FKDetCompra" ManuallyRouted="false" />
+        <AssociationConnector Association="BDSMARTZONEModel.FKDetVentas" ManuallyRouted="false" />
         <AssociationConnector Association="BDSMARTZONEModel.FK_TblDetalleFactura_TblFactura" ManuallyRouted="false" />
         <AssociationConnector Association="BDSMARTZONEModel.FK_TblUsuario_TblEmpleado" ManuallyRouted="false" />
         <AssociationConnector Association="BDSMARTZONEModel.FK_TblUserRol_TblRol" ManuallyRouted="false" />

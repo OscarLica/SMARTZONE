@@ -142,6 +142,38 @@
           <Property Name="FechaCrea" Type="datetime" Nullable="false" />
           <Property Name="FechaModifica" Type="datetime" />
         </EntityType>
+        <EntityType Name="DetalleCompra">
+          <Key>
+            <PropertyRef Name="IdDetalleCompra" />
+          </Key>
+          <Property Name="IdDetalleCompra" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdCompra" Type="int" Nullable="false" />
+          <Property Name="IdProducto" Type="varchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DetalleVenta">
+          <Key>
+            <PropertyRef Name="IdDetalleVenta" />
+          </Key>
+          <Property Name="IdDetalleVenta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Idventa" Type="int" Nullable="false" />
+          <Property Name="IdProducto" Type="varchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TblCompras">
+          <Key>
+            <PropertyRef Name="IdCompra" />
+          </Key>
+          <Property Name="IdCompra" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NoFactura" Type="varchar" MaxLength="100" />
+          <Property Name="FechaCompra" Type="datetime" Nullable="false" />
+          <Property Name="Iva" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="Total" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="SubTotal" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="IdProveedor" Type="int" Nullable="false" />
+          <Property Name="Anulada" Type="bit" />
+          <Property Name="MotivoAnulada" Type="nvarchar(max)" />
+          <Property Name="FechaAnulada" Type="datetime" />
+          <Property Name="IdUsuario" Type="int" Nullable="false" />
+        </EntityType>
         <EntityType Name="TblDetalleFactura">
           <Key>
             <PropertyRef Name="Id" />
@@ -182,6 +214,22 @@
           <Property Name="IdDetalleFactura" Type="int" Nullable="false" />
           <Property Name="IdDetalleAlmacen" Type="int" Nullable="false" />
           <Property Name="IdFactura" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TblVentas">
+          <Key>
+            <PropertyRef Name="Idventa" />
+          </Key>
+          <Property Name="Idventa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NoFactura" Type="varchar" MaxLength="100" />
+          <Property Name="FechaVenta" Type="datetime" Nullable="false" />
+          <Property Name="Iva" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="Total" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="SubTotal" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="Cliente" Type="int" Nullable="false" />
+          <Property Name="Anulada" Type="bit" />
+          <Property Name="MotivoAnulada" Type="nvarchar(max)" />
+          <Property Name="FechaAnulada" Type="datetime" />
+          <Property Name="IdUsuario" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="TblConfiguracion">
           <Key>
@@ -412,6 +460,30 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FKDetCompra">
+          <End Role="TblCompras" Type="Self.TblCompras" Multiplicity="1" />
+          <End Role="DetalleCompra" Type="Self.DetalleCompra" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblCompras">
+              <PropertyRef Name="IdCompra" />
+            </Principal>
+            <Dependent Role="DetalleCompra">
+              <PropertyRef Name="IdCompra" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKDetVentas">
+          <End Role="TblVentas" Type="Self.TblVentas" Multiplicity="1" />
+          <End Role="DetalleVenta" Type="Self.DetalleVenta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblVentas">
+              <PropertyRef Name="Idventa" />
+            </Principal>
+            <Dependent Role="DetalleVenta">
+              <PropertyRef Name="Idventa" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="BDSMARTZONEModelStoreContainer">
           <EntitySet Name="TblAlmacen" EntityType="Self.TblAlmacen" Schema="ALM" store:Type="Tables" />
           <EntitySet Name="TblProductosAlmacen" EntityType="Self.TblProductosAlmacen" Schema="ALM" store:Type="Tables" />
@@ -423,9 +495,13 @@
           <EntitySet Name="TblMoneda" EntityType="Self.TblMoneda" Schema="CAT" store:Type="Tables" />
           <EntitySet Name="TblProductos" EntityType="Self.TblProductos" Schema="CAT" store:Type="Tables" />
           <EntitySet Name="TblProveedores" EntityType="Self.TblProveedores" Schema="CAT" store:Type="Tables" />
+          <EntitySet Name="DetalleCompra" EntityType="Self.DetalleCompra" Schema="FAC" store:Type="Tables" />
+          <EntitySet Name="DetalleVenta" EntityType="Self.DetalleVenta" Schema="FAC" store:Type="Tables" />
+          <EntitySet Name="TblCompras" EntityType="Self.TblCompras" Schema="FAC" store:Type="Tables" />
           <EntitySet Name="TblDetalleFactura" EntityType="Self.TblDetalleFactura" Schema="FAC" store:Type="Tables" />
           <EntitySet Name="TblFactura" EntityType="Self.TblFactura" Schema="FAC" store:Type="Tables" />
           <EntitySet Name="TblMaestra" EntityType="Self.TblMaestra" Schema="FAC" store:Type="Tables" />
+          <EntitySet Name="TblVentas" EntityType="Self.TblVentas" Schema="FAC" store:Type="Tables" />
           <EntitySet Name="TblConfiguracion" EntityType="Self.TblConfiguracion" Schema="SEG" store:Type="Tables" />
           <EntitySet Name="TblEmpleado" EntityType="Self.TblEmpleado" Schema="SEG" store:Type="Tables" />
           <EntitySet Name="TblRol" EntityType="Self.TblRol" Schema="SEG" store:Type="Tables" />
@@ -482,6 +558,14 @@
           <AssociationSet Name="FK_TblUsuario_TblEmpleado" Association="Self.FK_TblUsuario_TblEmpleado">
             <End Role="TblEmpleado" EntitySet="TblEmpleado" />
             <End Role="TblUsuario" EntitySet="TblUsuario" />
+          </AssociationSet>
+          <AssociationSet Name="FKDetCompra" Association="Self.FKDetCompra">
+            <End Role="TblCompras" EntitySet="TblCompras" />
+            <End Role="DetalleCompra" EntitySet="DetalleCompra" />
+          </AssociationSet>
+          <AssociationSet Name="FKDetVentas" Association="Self.FKDetVentas">
+            <End Role="TblVentas" EntitySet="TblVentas" />
+            <End Role="DetalleVenta" EntitySet="DetalleVenta" />
           </AssociationSet>
         </EntityContainer>
       </Schema>
@@ -643,6 +727,41 @@
           <Property Name="FechaModifica" Type="DateTime" Precision="3" />
           <NavigationProperty Name="TblProductosAlmacen" Relationship="Self.FK_TblProductosAlmacen_TblProveedores" FromRole="TblProveedores" ToRole="TblProductosAlmacen" />
         </EntityType>
+        <EntityType Name="DetalleCompra">
+          <Key>
+            <PropertyRef Name="IdDetalleCompra" />
+          </Key>
+          <Property Name="IdDetalleCompra" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdCompra" Type="Int32" Nullable="false" />
+          <Property Name="IdProducto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="TblCompras" Relationship="Self.FKDetCompra" FromRole="DetalleCompra" ToRole="TblCompras" />
+        </EntityType>
+        <EntityType Name="DetalleVenta">
+          <Key>
+            <PropertyRef Name="IdDetalleVenta" />
+          </Key>
+          <Property Name="IdDetalleVenta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Idventa" Type="Int32" Nullable="false" />
+          <Property Name="IdProducto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="TblVentas" Relationship="Self.FKDetVentas" FromRole="DetalleVenta" ToRole="TblVentas" />
+        </EntityType>
+        <EntityType Name="TblCompras">
+          <Key>
+            <PropertyRef Name="IdCompra" />
+          </Key>
+          <Property Name="IdCompra" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NoFactura" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="FechaCompra" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Iva" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="Total" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="SubTotal" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="IdProveedor" Type="Int32" Nullable="false" />
+          <Property Name="Anulada" Type="Boolean" />
+          <Property Name="MotivoAnulada" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FechaAnulada" Type="DateTime" Precision="3" />
+          <Property Name="IdUsuario" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DetalleCompra" Relationship="Self.FKDetCompra" FromRole="TblCompras" ToRole="DetalleCompra" />
+        </EntityType>
         <EntityType Name="TblDetalleFactura">
           <Key>
             <PropertyRef Name="Id" />
@@ -686,6 +805,23 @@
           <Property Name="IdDetalleFactura" Type="Int32" Nullable="false" />
           <Property Name="IdDetalleAlmacen" Type="Int32" Nullable="false" />
           <Property Name="IdFactura" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TblVentas">
+          <Key>
+            <PropertyRef Name="Idventa" />
+          </Key>
+          <Property Name="Idventa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NoFactura" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="FechaVenta" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Iva" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="Total" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="SubTotal" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="Cliente" Type="Int32" Nullable="false" />
+          <Property Name="Anulada" Type="Boolean" />
+          <Property Name="MotivoAnulada" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FechaAnulada" Type="DateTime" Precision="3" />
+          <Property Name="IdUsuario" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DetalleVenta" Relationship="Self.FKDetVentas" FromRole="TblVentas" ToRole="DetalleVenta" />
         </EntityType>
         <EntityType Name="TblConfiguracion">
           <Key>
@@ -874,6 +1010,30 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FKDetCompra">
+          <End Role="TblCompras" Type="Self.TblCompras" Multiplicity="1" />
+          <End Role="DetalleCompra" Type="Self.DetalleCompra" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblCompras">
+              <PropertyRef Name="IdCompra" />
+            </Principal>
+            <Dependent Role="DetalleCompra">
+              <PropertyRef Name="IdCompra" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKDetVentas">
+          <End Role="TblVentas" Type="Self.TblVentas" Multiplicity="1" />
+          <End Role="DetalleVenta" Type="Self.DetalleVenta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblVentas">
+              <PropertyRef Name="Idventa" />
+            </Principal>
+            <Dependent Role="DetalleVenta">
+              <PropertyRef Name="Idventa" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_TblDetalleFactura_TblFactura">
           <End Role="TblFactura" Type="Self.TblFactura" Multiplicity="1" />
           <End Role="TblDetalleFactura" Type="Self.TblDetalleFactura" Multiplicity="*" />
@@ -922,7 +1082,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="BDSMARTZONEEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="TblAlmacen" EntityType="Self.TblAlmacen" />
           <EntitySet Name="TblProductosAlmacen" EntityType="Self.TblProductosAlmacen" />
           <EntitySet Name="TblProductosAlmacenDet" EntityType="Self.TblProductosAlmacenDet" />
@@ -933,9 +1093,13 @@
           <EntitySet Name="TblMoneda" EntityType="Self.TblMoneda" />
           <EntitySet Name="TblProductos" EntityType="Self.TblProductos" />
           <EntitySet Name="TblProveedores" EntityType="Self.TblProveedores" />
+          <EntitySet Name="DetalleCompra" EntityType="Self.DetalleCompra" />
+          <EntitySet Name="DetalleVenta" EntityType="Self.DetalleVenta" />
+          <EntitySet Name="TblCompras" EntityType="Self.TblCompras" />
           <EntitySet Name="TblDetalleFactura" EntityType="Self.TblDetalleFactura" />
           <EntitySet Name="TblFactura" EntityType="Self.TblFactura" />
           <EntitySet Name="TblMaestra" EntityType="Self.TblMaestra" />
+          <EntitySet Name="TblVentas" EntityType="Self.TblVentas" />
           <EntitySet Name="TblConfiguracion" EntityType="Self.TblConfiguracion" />
           <EntitySet Name="TblEmpleado" EntityType="Self.TblEmpleado" />
           <EntitySet Name="TblRol" EntityType="Self.TblRol" />
@@ -977,6 +1141,14 @@
             <End Role="TblMoneda" EntitySet="TblMoneda" />
             <End Role="TblFactura" EntitySet="TblFactura" />
           </AssociationSet>
+          <AssociationSet Name="FKDetCompra" Association="Self.FKDetCompra">
+            <End Role="TblCompras" EntitySet="TblCompras" />
+            <End Role="DetalleCompra" EntitySet="DetalleCompra" />
+          </AssociationSet>
+          <AssociationSet Name="FKDetVentas" Association="Self.FKDetVentas">
+            <End Role="TblVentas" EntitySet="TblVentas" />
+            <End Role="DetalleVenta" EntitySet="DetalleVenta" />
+          </AssociationSet>
           <AssociationSet Name="FK_TblDetalleFactura_TblFactura" Association="Self.FK_TblDetalleFactura_TblFactura">
             <End Role="TblFactura" EntitySet="TblFactura" />
             <End Role="TblDetalleFactura" EntitySet="TblDetalleFactura" />
@@ -999,7 +1171,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="BDSMARTZONEModelStoreContainer" CdmEntityContainer="Entities">
+        <EntityContainerMapping StorageEntityContainer="BDSMARTZONEModelStoreContainer" CdmEntityContainer="BDSMARTZONEEntities">
           <EntitySetMapping Name="TblAlmacen">
             <EntityTypeMapping TypeName="BDSMARTZONEModel.TblAlmacen">
               <MappingFragment StoreEntitySet="TblAlmacen">
@@ -1147,6 +1319,41 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="DetalleCompra">
+            <EntityTypeMapping TypeName="BDSMARTZONEModel.DetalleCompra">
+              <MappingFragment StoreEntitySet="DetalleCompra">
+                <ScalarProperty Name="IdDetalleCompra" ColumnName="IdDetalleCompra" />
+                <ScalarProperty Name="IdCompra" ColumnName="IdCompra" />
+                <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetalleVenta">
+            <EntityTypeMapping TypeName="BDSMARTZONEModel.DetalleVenta">
+              <MappingFragment StoreEntitySet="DetalleVenta">
+                <ScalarProperty Name="IdDetalleVenta" ColumnName="IdDetalleVenta" />
+                <ScalarProperty Name="Idventa" ColumnName="Idventa" />
+                <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblCompras">
+            <EntityTypeMapping TypeName="BDSMARTZONEModel.TblCompras">
+              <MappingFragment StoreEntitySet="TblCompras">
+                <ScalarProperty Name="IdCompra" ColumnName="IdCompra" />
+                <ScalarProperty Name="NoFactura" ColumnName="NoFactura" />
+                <ScalarProperty Name="FechaCompra" ColumnName="FechaCompra" />
+                <ScalarProperty Name="Iva" ColumnName="Iva" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+                <ScalarProperty Name="IdProveedor" ColumnName="IdProveedor" />
+                <ScalarProperty Name="Anulada" ColumnName="Anulada" />
+                <ScalarProperty Name="MotivoAnulada" ColumnName="MotivoAnulada" />
+                <ScalarProperty Name="FechaAnulada" ColumnName="FechaAnulada" />
+                <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="TblDetalleFactura">
             <EntityTypeMapping TypeName="BDSMARTZONEModel.TblDetalleFactura">
               <MappingFragment StoreEntitySet="TblDetalleFactura">
@@ -1188,6 +1395,23 @@
                 <ScalarProperty Name="IdDetalleFactura" ColumnName="IdDetalleFactura" />
                 <ScalarProperty Name="IdDetalleAlmacen" ColumnName="IdDetalleAlmacen" />
                 <ScalarProperty Name="IdFactura" ColumnName="IdFactura" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblVentas">
+            <EntityTypeMapping TypeName="BDSMARTZONEModel.TblVentas">
+              <MappingFragment StoreEntitySet="TblVentas">
+                <ScalarProperty Name="Idventa" ColumnName="Idventa" />
+                <ScalarProperty Name="NoFactura" ColumnName="NoFactura" />
+                <ScalarProperty Name="FechaVenta" ColumnName="FechaVenta" />
+                <ScalarProperty Name="Iva" ColumnName="Iva" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+                <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+                <ScalarProperty Name="Anulada" ColumnName="Anulada" />
+                <ScalarProperty Name="MotivoAnulada" ColumnName="MotivoAnulada" />
+                <ScalarProperty Name="FechaAnulada" ColumnName="FechaAnulada" />
+                <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

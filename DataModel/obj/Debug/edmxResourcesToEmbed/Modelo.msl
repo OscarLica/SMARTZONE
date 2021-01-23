@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="BDSMARTZONEModelStoreContainer" CdmEntityContainer="Entities">
+  <EntityContainerMapping StorageEntityContainer="BDSMARTZONEModelStoreContainer" CdmEntityContainer="BDSMARTZONEEntities">
     <EntitySetMapping Name="TblAlmacen">
       <EntityTypeMapping TypeName="BDSMARTZONEModel.TblAlmacen">
         <MappingFragment StoreEntitySet="TblAlmacen">
@@ -148,6 +148,41 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="DetalleCompra">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.DetalleCompra">
+        <MappingFragment StoreEntitySet="DetalleCompra">
+          <ScalarProperty Name="IdDetalleCompra" ColumnName="IdDetalleCompra" />
+          <ScalarProperty Name="IdCompra" ColumnName="IdCompra" />
+          <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleVenta">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.DetalleVenta">
+        <MappingFragment StoreEntitySet="DetalleVenta">
+          <ScalarProperty Name="IdDetalleVenta" ColumnName="IdDetalleVenta" />
+          <ScalarProperty Name="Idventa" ColumnName="Idventa" />
+          <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblCompras">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblCompras">
+        <MappingFragment StoreEntitySet="TblCompras">
+          <ScalarProperty Name="IdCompra" ColumnName="IdCompra" />
+          <ScalarProperty Name="NoFactura" ColumnName="NoFactura" />
+          <ScalarProperty Name="FechaCompra" ColumnName="FechaCompra" />
+          <ScalarProperty Name="Iva" ColumnName="Iva" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="IdProveedor" ColumnName="IdProveedor" />
+          <ScalarProperty Name="Anulada" ColumnName="Anulada" />
+          <ScalarProperty Name="MotivoAnulada" ColumnName="MotivoAnulada" />
+          <ScalarProperty Name="FechaAnulada" ColumnName="FechaAnulada" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="TblDetalleFactura">
       <EntityTypeMapping TypeName="BDSMARTZONEModel.TblDetalleFactura">
         <MappingFragment StoreEntitySet="TblDetalleFactura">
@@ -189,6 +224,23 @@
           <ScalarProperty Name="IdDetalleFactura" ColumnName="IdDetalleFactura" />
           <ScalarProperty Name="IdDetalleAlmacen" ColumnName="IdDetalleAlmacen" />
           <ScalarProperty Name="IdFactura" ColumnName="IdFactura" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblVentas">
+      <EntityTypeMapping TypeName="BDSMARTZONEModel.TblVentas">
+        <MappingFragment StoreEntitySet="TblVentas">
+          <ScalarProperty Name="Idventa" ColumnName="Idventa" />
+          <ScalarProperty Name="NoFactura" ColumnName="NoFactura" />
+          <ScalarProperty Name="FechaVenta" ColumnName="FechaVenta" />
+          <ScalarProperty Name="Iva" ColumnName="Iva" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="Anulada" ColumnName="Anulada" />
+          <ScalarProperty Name="MotivoAnulada" ColumnName="MotivoAnulada" />
+          <ScalarProperty Name="FechaAnulada" ColumnName="FechaAnulada" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

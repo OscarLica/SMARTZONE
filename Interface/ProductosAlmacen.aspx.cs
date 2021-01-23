@@ -6,6 +6,7 @@ using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using DataModel.Controllers;
+using DataModel.Entidad;
 
 namespace Interface
 {
@@ -14,6 +15,15 @@ namespace Interface
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public List<ReportProductosAlmancen> ReporteProductosBodega() {
+            return new ProductosAlmacenControllers().ReporteProductosAlmacen();
+        }
+
+        public List<ReportProductosAlmancen> GenerarReporteProductosBodega()
+        {
+            return new ProductosAlmacenControllers().ReporteProductosAlmacen();
         }
 
         [WebMethod]

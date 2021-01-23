@@ -35,9 +35,13 @@ namespace DataModel
         public DbSet<TblMoneda> TblMoneda { get; set; }
         public DbSet<TblProductos> TblProductos { get; set; }
         public DbSet<TblProveedores> TblProveedores { get; set; }
+        public DbSet<DetalleCompra> DetalleCompra { get; set; }
+        public DbSet<DetalleVenta> DetalleVenta { get; set; }
+        public DbSet<TblCompras> TblCompras { get; set; }
         public DbSet<TblDetalleFactura> TblDetalleFactura { get; set; }
         public DbSet<TblFactura> TblFactura { get; set; }
         public DbSet<TblMaestra> TblMaestra { get; set; }
+        public DbSet<TblVentas> TblVentas { get; set; }
         public DbSet<TblConfiguracion> TblConfiguracion { get; set; }
         public DbSet<TblEmpleado> TblEmpleado { get; set; }
         public DbSet<TblRol> TblRol { get; set; }
