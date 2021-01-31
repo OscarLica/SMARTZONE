@@ -275,6 +275,7 @@
   <ItemGroup>
     <EmbeddedResource Include="ReportCompras.rdlc" />
     <EmbeddedResource Include="ReporteProductoGarantia.rdlc" />
+    <EmbeddedResource Include="ReporteProductoMasVendidos.rdlc" />
     <EmbeddedResource Include="ReporteProductosBodega.rdlc" />
     <EmbeddedResource Include="ReportVentas.rdlc" />
   </ItemGroup>

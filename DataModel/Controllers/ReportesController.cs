@@ -26,6 +26,8 @@ namespace DataModel.Controllers
                     return new ReportResponse { Path = "ReporteProductosBodega.rdlc", Datos = new ProductosAlmacenControllers().ReporteProductosAlmacen() };
                 case 4:
                     return new ReportResponse { Path = "ReporteProductoGarantia.rdlc", Datos = new FacturaControllers().ProducosGarantia() };
+                case 5:
+                    return new ReportResponse { Path = "ReporteProductoMasVendidos.rdlc", Datos = new FacturaControllers().ProducosMasVendidos() };
             }
             return new ReportResponse();
         }

@@ -53,5 +53,10 @@ namespace Interface
             ReportesController ServiceReporte = new ReportesController();
             return ServiceReporte.ReporteVentas();
         }
+        public List<ProductosMasVendidos> ReporteProdMasVendidos()
+        {
+            FacturaControllers ServiceReporte = new FacturaControllers();
+            return ServiceReporte.ProducosMasVendidos();
+        }
     }
 }

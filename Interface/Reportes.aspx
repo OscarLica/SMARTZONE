@@ -45,6 +45,7 @@
                 <option value="2"> Reporte ventas</option>
                 <option value="3"> Reporte producto en bodega</option>
                  <option value="4"> Reporte producto con garantia</option>
+                <option value="5"> Reporte productos más vendidos</option>
             </select>
             <input type="button" id="GenerateReport" data-generate-report="true" class="btnSuccess" value="Generar" />
         </div>
