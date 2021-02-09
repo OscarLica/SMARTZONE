@@ -10,12 +10,14 @@ namespace DataModel.Entidad
     {
         public string Factura { get; set; }
         public string Producto { get; set; }
+        public string IMEI { get; set; }
         public DateTime FechaFinGarantia { get; set; }
         public int DiasRestantes { get; set; }
     }
     public class ProductosMasVendidos
     {
         public string Producto { get; set; }
+        public string IMEI { get; set; }
         public int Cantidad { get; set; }
         public decimal Total { get; set; }
     }

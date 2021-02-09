@@ -29,12 +29,13 @@ namespace DataModel.Controllers
                          join mar in Context.TblMarca on producto.IdMarca equals mar.Id
                          join cat in Context.TblCategorias on producto.IdCategoria equals cat.Id
                          where detfac.FechaVenceGarantia != null && detfac.FechaVenceGarantia.Value > fecha
-                         group new { al, cat, modelo, mar, detfac } by new { al.CodFactura, cat.Descripcion, mdes = modelo.Descripcion, marDes = mar.Descripcion } into gr
+                         group new { al, cat, modelo, mar, detfac, pad } by new { al.CodFactura, cat.Descripcion, mdes = modelo.Descripcion, marDes = mar.Descripcion } into gr
                          select new ProductosGarantia
                          {
                              Factura = gr.Key.CodFactura,
                              Producto = gr.Key.Descripcion + " " + gr.Key.mdes + " " + gr.Key.marDes,
-                             FechaFinGarantia = (DateTime) gr.FirstOrDefault().detfac.FechaVenceGarantia
+                             FechaFinGarantia = (DateTime) gr.FirstOrDefault().detfac.FechaVenceGarantia,
+                             IMEI = gr.FirstOrDefault().pad.IMEI
                             
                          }).ToList();
             foreach (var item in result)
@@ -55,12 +56,13 @@ namespace DataModel.Controllers
                           join producto in Context.TblProductos on modelo.IdProducto equals producto.Id
                           join mar in Context.TblMarca on producto.IdMarca equals mar.Id
                           join cat in Context.TblCategorias on producto.IdCategoria equals cat.Id
-                          group new { al, cat, modelo, mar, detfac } by new { al.CodFactura, cat.Descripcion, mdes = modelo.Descripcion, marDes = mar.Descripcion } into gr
+                          group new { al, cat, modelo, mar, detfac, pad } by new { al.CodFactura, cat.Descripcion, mdes = modelo.Descripcion, marDes = mar.Descripcion } into gr
                           select new ProductosMasVendidos
                           {
                               Producto = gr.Key.Descripcion + " " + gr.Key.mdes + " " + gr.Key.marDes,
                               Cantidad = gr.Sum(x => x.detfac.Cantidad),
-                              Total = gr.Sum(x => x.detfac.Total)
+                              Total = gr.Sum(x => x.detfac.Total),
+                              IMEI = gr.FirstOrDefault().pad.IMEI
                           }).OrderByDescending(x => x.Cantidad).ToList();
            
             return result;

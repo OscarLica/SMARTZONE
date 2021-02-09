@@ -23,9 +23,10 @@ namespace DataModel.Controllers
                          join producto in Model.TblProductos on modelo.IdProducto equals producto.Id
                          join mar in Model.TblMarca on producto.IdMarca equals mar.Id
                          join cat in Model.TblCategorias on producto.IdCategoria equals cat.Id
-                         group new { al, cat, modelo, mar } by new { al.Id, idcat = cat.Id, idmol = modelo.Id, idmar = mar.Id, cat.Descripcion, mdes = modelo.Descripcion, marDes = mar.Descripcion } into gr
+                         group new { al, cat, modelo, mar, pad } by new { al.Id, idcat = cat.Id, idmol = modelo.Id, idmar = mar.Id, cat.Descripcion, mdes = modelo.Descripcion, marDes = mar.Descripcion } into gr
                          select new ReportProductosAlmancen
                          {
+                             IMEI = gr.FirstOrDefault().pad.IMEI,
                              IdAlmacen = gr.Key.Id,
                              Producto = gr.Key.Descripcion + " " + gr.Key.mdes + " " + gr.Key.marDes,
                              Total = gr.Count()

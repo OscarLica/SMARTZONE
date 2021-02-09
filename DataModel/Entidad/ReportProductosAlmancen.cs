@@ -10,6 +10,7 @@ namespace DataModel.Entidad
     {
         public int IdAlmacen { get; set; }
         public string Producto { get; set; }
+        public string IMEI { get; set; }
         public int Total { get; set; }
     }
 }
